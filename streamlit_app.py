@@ -3,7 +3,6 @@ import pandas as pd
 from joblib import load
 from sentence_transformers import SentenceTransformer
 
-Model/gradient_boosting_model.joblib
 
 # Function to load the models, I have only used SVM and Gradient Boosting since they gave the best results
 def load_models():
