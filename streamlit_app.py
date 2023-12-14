@@ -32,10 +32,10 @@ def make_predictions(models, input_features):
         predictions[name] = pred[0]  # Assuming single prediction
     return predictions
 
-models = {}
 
 # Load models
 svm_model, gradient_boosting_model = load_models()
+models = {}
 if not all([svm_model, gradient_boosting_model]):
     print("One or more models could not be loaded.")
 else:
