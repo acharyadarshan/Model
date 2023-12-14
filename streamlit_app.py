@@ -3,9 +3,9 @@ import pandas as pd
 from joblib import load
 from sentence_transformers import SentenceTransformer
 
-# Function to load the models, I have only used SVM and Gradient Boosting since they gave the best results
-from joblib import load
 
+
+# Function to load the models, I have only used SVM and Gradient Boosting since they gave the best results
 def load_models():
     try:
         svm_model = load('svm_multioutput_model.joblib')
@@ -33,10 +33,12 @@ def make_predictions(models, input_features):
         predictions[name] = pred[0]  # Assuming single prediction
     return predictions
 
+models = {}
+
 # Load models
 svm_model, gradient_boosting_model = load_models()
 if not all([svm_model, gradient_boosting_model]):
-    print("One or more models could not be loaded. Please check the error messages.")
+    print("One or more models could not be loaded.")
 else:
     models = {
     'SVM': svm_model,
