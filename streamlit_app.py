@@ -9,14 +9,13 @@ from joblib import load
 def load_models():
     try:
         svm_model = load('svm_multioutput_model.joblib')
-        # optimized_decision_tree_model = load('optimized_decision_tree_model.joblib')
         gradient_boosting_model = load('gradient_boosting_model.joblib')
         
         print("All models loaded successfully.")
         return svm_model, gradient_boosting_model
     except Exception as e:
         print(f"An error occurred while loading the models: {e}")
-        return None, None, None
+        return None, None
 
 
 # Function to generate embeddings for an input word
