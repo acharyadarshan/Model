@@ -8,8 +8,8 @@ Model/gradient_boosting_model.joblib
 # Function to load the models, I have only used SVM and Gradient Boosting since they gave the best results
 def load_models():
     try:
-        svm_model = load('Model/svm_multioutput_model.joblib')
-        gradient_boosting_model = load('Model/gradient_boosting_model.joblib')
+        svm_model = load('svm_multioutput_model.joblib')
+        gradient_boosting_model = load('gradient_boosting_model.joblib')
         
         print("All models loaded successfully.")
         return svm_model, gradient_boosting_model
