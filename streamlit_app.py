@@ -16,7 +16,7 @@ def load_models():
         return svm_model, gradient_boosting_model
     except Exception as e:
         print(f"An error occurred while loading the models: {e}")
-        return None, None, None, None
+        return None, None, None
 
 
 # Function to generate embeddings for an input word

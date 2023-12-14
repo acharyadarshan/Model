@@ -1,10 +1,10 @@
 joblib==1.1.0
 scikit-learn==1.0.2
 pandas==1.4.2
-numpy==1.21.5
 protobuf==4.25.1
 PyYAML==6.0.1
-scipy==1.8.0
+numpy==1.21.5  
+scipy==1.8.0   
 sentencepiece==0.1.99
 six==1.16.0
 tokenizers==0.15.0
